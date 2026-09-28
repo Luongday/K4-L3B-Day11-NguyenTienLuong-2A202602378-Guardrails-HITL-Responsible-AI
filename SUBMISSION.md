@@ -134,11 +134,11 @@ K4-L3-DAY11-<HoVaTen>-<MSSV>-Guardrails-HITL-Responsible-AI/
 
 ## 5. Checklist trước khi nộp link
 
-- [ ] Có `outputs/results.json` và **validate** được với `schemas/results.schema.json`
-- [ ] Có `outputs/attack_results.json` (unsafe + guards)
-- [ ] **Không** commit `.env` / API key
-- [ ] `outputs/` không chứa placeholder tự tạo tay (file do `python src/main.py --part 3|4` sinh ra)
-- [ ] Đã chạy tự kiểm:
+- [x] Có `outputs/results.json` và **validate** được với `schemas/results.schema.json`
+- [x] Có `outputs/attack_results.json` (unsafe + guards)
+- [x] **Không** commit `.env` / API key
+- [x] `outputs/` không chứa placeholder tự tạo tay (file do `python src/main.py --part 3|4` sinh ra)
+- [x] Đã chạy tự kiểm:
 
 **Windows (PowerShell):**
 
@@ -158,6 +158,6 @@ pytest tests/public -q
 python scripts/grade.py --submission-dir . --out outputs/grade_report.json
 ```
 
-- [ ] Nộp **link repo** đúng hạn lên LMS / CodeLabs
+- [x] Nộp **link repo** đúng hạn lên LMS / CodeLabs
 
 > Máy không chạy được (thiếu lib, sai path, lỗi cú pháp) → phần chấm máy = lỗi kỹ thuật — sửa đóng gói trước khi nộp.
