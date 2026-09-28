@@ -36,7 +36,8 @@ PROVIDER_OPENROUTER = "openrouter"
 
 # --- Blue Team (LOCKED) ---
 BLUE_PROVIDER = PROVIDER_OPENROUTER
-BLUE_MODEL = "liquid/lfm-2.5-2.6b"
+# OpenRouter serves this model under the ":free" tag; the bare id 404s.
+BLUE_MODEL = "liquid/lfm-2.5-2.6b:free"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_OPENROUTER_MODEL = BLUE_MODEL  # alias
 
@@ -269,7 +270,7 @@ ALLOWED_TOPICS = [
     "loan", "interest", "savings", "credit",
     "deposit", "withdrawal", "balance", "payment",
     "tai khoan", "giao dich", "tiet kiem", "lai suat",
-    "chuyen tien", "the tin dung", "so du", "vay",
+    "chuyen tien", "chuyen khoan", "the tin dung", "so du", "vay",
     "ngan hang", "atm",
 ]
 
